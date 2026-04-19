@@ -38,6 +38,9 @@ const selectors = (function() {
                     selectorDiv.addClass(lockedClass);
                     var text = '';
                     text = latexUtil.latexToHtml(selector['text']);
+                    if (selector.type == 'keywords' && selector.text.indexOf(':') >= 0) {
+                        text = latexUtil.latexToHtml(selector.text.substring(selector.text.indexOf(':') + 1));
+                    }
                     if (selector.type == 'citations_incoming') {
                         text = 'citing ' + text;
                     } else if (selector.type == 'citations_outgoing') {

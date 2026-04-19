@@ -31,7 +31,7 @@ var stylesDir = 'styles/';
  */
 var tagCloudOptions = [{
     field: 'keywords',
-    title: 'Keywords',
+    title: 'Framework Tags',
     minTagFrequency: 1
 }, {
     field: 'author',
@@ -54,7 +54,7 @@ var editable = false;
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'SurVis companion page for the RM4125 Coursework 3 literature review on learning-enhanced personnel scheduling.',
+    html: 'SurVis companion page for the RM4125 Coursework 3 literature review, organised by review categories and cross-cutting research themes.',
     id: 'xue2025'
 };
 

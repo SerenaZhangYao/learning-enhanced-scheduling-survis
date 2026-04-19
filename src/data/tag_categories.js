@@ -1,14 +1,8 @@
 const userDefinedTagCategories = {
-	"cat": {
-		"description": "review category"
+	"category": {
+		"description": "classification categories aligned with the literature review structure"
 	},
-	"focus": {
-		"description": "main analytical focus"
-	},
-	"setting": {
-		"description": "application setting"
-	},
-	"workforce": {
-		"description": "workforce structure"
+	"theme": {
+		"description": "cross-cutting themes used to compare papers across categories"
 	}
 }

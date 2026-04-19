@@ -182,6 +182,9 @@ const tags = (function () {
     }
 
     function appendTagDivs(name, title, tagDivs, element) {
+        if (!tagDivs || tagDivs.length === 0) {
+            return;
+        }
 
         tagDivs = tagDivs.sort(function (a, b) {
             var nA = parseInt(a.attr('value'));
@@ -199,10 +202,11 @@ const tags = (function () {
             class: 'tag_category'
         }).appendTo(element);
         if (name) {
+            var labelText = name.charAt(0).toUpperCase() + name.slice(1) + ": ";
             var labelDiv = $('<span>', {
                 class: 'label tooltip',
                 title: title,
-                text: name + ": "
+                text: labelText
             }).appendTo(categoryDiv);
             labelDiv.tooltipster({
                 theme: 'tooltipster-survis'

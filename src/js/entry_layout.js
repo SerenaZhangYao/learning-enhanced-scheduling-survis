@@ -344,10 +344,10 @@ const entryLayout = (function () {
                 }).appendTo(tagListSpan);
                 var colonIndex = tagDiv.text().indexOf(':');
                 if (colonIndex >= 0 && tagListSpan.text().length - 1 > colonIndex) {
-                    var tagCategory = tagDiv.text().substring(0, colonIndex + 1);
+                    var tagCategory = tagDiv.text().substring(0, colonIndex);
                     var tagCategorySpan = $('<span>', {
                         class: 'tag_category',
-                        text: tagCategory
+                        text: tagCategory.charAt(0).toUpperCase() + tagCategory.slice(1) + ': '
                     });
                     tagDiv.text(tagDiv.text().substring(colonIndex + 1));
                     tagDiv.prepend(tagCategorySpan);

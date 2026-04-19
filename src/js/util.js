@@ -33,11 +33,6 @@ const bibUtil = (function () {
                             tags.push(tag);
                         }
                     });
-                    $.each(tagCategories, function (categoryName) {
-                        if (fieldString.indexOf(categoryName + ":") == -1) {
-                            tags.push(categoryName + ":?");
-                        }
-                    });
                     tags.sort(tagSort);
                     return tags;
                 case 'author':
