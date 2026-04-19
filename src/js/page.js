@@ -20,12 +20,7 @@ const page = (function () {
             tags.updateTagClouds();
             clustering.updateClusters();
             entryLayout.updateEntryList();
-            setTimeout(
-                function() 
-                {
-                  // workaround: delayed loading waiting for the grid layout to be computed (to determine the correct width of the svg)
-                  timeline.updateTimeline();
-                }, 500);
+            scheduleTimelineRefresh();
             if (scrollToTop) {
                 $('#result_body').scrollTop(0);
             }
@@ -352,6 +347,23 @@ const page = (function () {
             searchInput.val('');
         }
     };
+
+    function scheduleTimelineRefresh() {
+        function refreshTimeline() {
+            timeline.updateTimeline();
+        }
+
+        // The timeline needs a settled grid width before drawing its SVG.
+        // On a cold load, CSS and remote libraries may arrive slightly later,
+        // so we redraw once on the next paint and again as a short fallback.
+        if (window.requestAnimationFrame) {
+            window.requestAnimationFrame(function () {
+                window.requestAnimationFrame(refreshTimeline);
+            });
+        }
+        setTimeout(refreshTimeline, 500);
+        setTimeout(refreshTimeline, 1200);
+    }
 
     /*function applyLayout() {
         var layout = $('body').layout({

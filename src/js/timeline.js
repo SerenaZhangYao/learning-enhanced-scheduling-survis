@@ -7,9 +7,6 @@ const timeline = (function () {
 
     var height = 100;
 
-    var computeYearRange = true;
-
-
     var maxFrequency = 0;
     var maxReferenceCount = 0;
     var maxBlocks = 0;
@@ -56,18 +53,31 @@ const timeline = (function () {
         var dataSelector = {};
         var referenceCount = {};
         references = {};
+        minYear = 3000;
+        maxYear = 0;
+        maxFrequency = 0;
+        maxReferenceCount = 0;
+        maxBlocks = 0;
+        maxIncomingCount = 0;
+        minIncomingCount = 1000;
+
         computeYearlyData(data, referenceCount, dataSelector);
+
+        if (maxYear < minYear) {
+            d3data = [];
+            d3referenceCount = [];
+            d3references = [];
+            return dataSelector;
+        }
+
         for (var year = minYear; year <= maxYear; year++) {
             if (!data[year]) {
                 data[year] = 0;
             } else {
-                if (computeYearRange) {
-                    maxFrequency = Math.max(data[year], maxFrequency);
-                    maxReferenceCount = Math.max(referenceCount[year], maxReferenceCount);
-                }
+                maxFrequency = Math.max(data[year], maxFrequency);
+                maxReferenceCount = Math.max(referenceCount[year], maxReferenceCount);
             }
         }
-        computeYearRange = false;
         d3data = d3.entries(data);
         d3data = d3data.sort(function (a, b) {
             return d3.ascending(a.key, b.key);
@@ -231,10 +241,8 @@ const timeline = (function () {
             if (isNaN(year)) {
                 return;
             }
-            if (computeYearRange) {
-                minYear = Math.min(year, minYear);
-                maxYear = Math.max(year, maxYear);
-            }
+            minYear = Math.min(year, minYear);
+            maxYear = Math.max(year, maxYear);
 
             if (passedFilter) {
                 if (year in data) {

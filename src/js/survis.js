@@ -10,4 +10,8 @@ $(window).resize(function () {
   timeline.updateTimeline();
 });
 
+$(window).on('load', function () {
+  timeline.updateTimeline();
+});
+
 const electron = typeof require !== 'undefined';
