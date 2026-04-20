@@ -36,11 +36,11 @@ var tagCloudOptions = [{
 }, {
     field: 'author',
     title: 'Authors',
-    minTagFrequency: 1
+    minTagFrequency: 2
 }, {
     field: 'journal',
     title: 'Venues',
-    minTagFrequency: 1
+    minTagFrequency: 2
 }];
 
 /**
@@ -54,7 +54,7 @@ var editable = false;
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'SurVis companion page for the COMP4126 Coursework 3 literature review, organised by review categories and cross-cutting research themes.',
+    html: 'SurVis companion page for the COMP4126 Coursework 3 literature review, organised by review categories and cross-cutting research themes; the select button highlights the frontier anchor paper, Xue et al. (2025).',
     id: 'xue2025'
 };
 

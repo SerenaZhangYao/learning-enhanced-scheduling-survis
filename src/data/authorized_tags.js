@@ -1,15 +1,15 @@
 const userDefinedAuthorizedTags = {
-	"category:survey": {
+	"category:A field framing": {
 		"description": "Category A: surveys and field-framing studies"
 	},
-	"category:preference": {
+	"category:B preference implementation": {
 		"description": "Category B: preference-aware and implementation-oriented studies"
 	},
-	"category:shift design": {
+	"category:C shift design decomposition": {
 		"description": "Category C: shift design and decomposition studies"
 	},
-	"category:learning": {
-		"description": "Category D: evolutionary and learning-enhanced methods"
+	"category:D hybrid learning": {
+		"description": "Category D: evolutionary, hybrid, and learning-enhanced methods"
 	},
 	"theme:multi-skill": {
 		"description": "papers addressing multi-skilled or skill-aware workforce decisions"
