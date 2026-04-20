@@ -1,6 +1,6 @@
 # learning-enhanced-scheduling-survis
 
-Public companion repository for the RM4125 Coursework 3 literature review
+Public SurVis companion repository for the COMP4126 Coursework 3 literature review
 `Learning-Enhanced Personnel Scheduling for Flexible Multi-Skilled Workforces`.
 
 ## Repository contents
@@ -8,8 +8,7 @@ Public companion repository for the RM4125 Coursework 3 literature review
 - `src/`: the SurVis web app
 - `src/data/generated/`: generated SurVis data used by the public site
 - `bib/references.bib`: the bibliography used to build the SurVis data
-- `review_papers.bib`: a standalone copy of the 17-paper review bibliography
-- `report/`: the LaTeX source, figures, and compiled PDF for the coursework report
+- `update_data.py`: the local script for regenerating the SurVis data
 
 ## Local preview
 
@@ -34,13 +33,3 @@ Expected public URL after enabling Pages from the repository root:
 ```text
 https://lmy12367.github.io/learning-enhanced-scheduling-survis/
 ```
-
-## Report
-
-The latest compiled coursework report is:
-
-- `report/main.pdf`
-
-Its LaTeX source is:
-
-- `report/main.tex`
