@@ -1,6 +1,7 @@
 ﻿const generatedBibEntries = {
     "aickelin2004": {
         "author": "Aickelin, Uwe and Dowsland, Kathryn A.",
+        "comment": "Contribution: indirect genetic algorithm for nurse scheduling. Evidence: live hospital experiments against tabu-search-style baselines. Role: evolutionary baseline.",
         "doi": "10.1016/S0305-0548(03)00034-0",
         "journal": "Computers \\& Operations Research",
         "keywords": "category:learning, theme:evolutionary",
@@ -14,6 +15,7 @@
     },
     "bai2010": {
         "author": "Bai, Ruibin and Burke, Edmund K. and Kendall, Graham and Li, Jingpeng and McCollum, Barry",
+        "comment": "Contribution: hybrid evolutionary rostering method. Evidence: benchmark comparisons showing better feasible and high-quality solutions. Role: stronger hybrid-search evidence.",
         "doi": "10.1109/TEVC.2009.2033583",
         "journal": "IEEE Transactions on Evolutionary Computation",
         "keywords": "category:learning, theme:evolutionary",
@@ -27,6 +29,7 @@
     },
     "cakirgil2020": {
         "author": "{\\c{C}ak{\\i}rgil}, Seray and {Y{\\\"u}cel}, Eda and Kuyzu, G{\\\"u}ltekin",
+        "comment": "Contribution: two-stage matheuristic for multi-skill scheduling and routing. Evidence: real-life and literature instances. Role: rich service-operation frontier.",
         "doi": "10.1016/j.cor.2020.104908",
         "journal": "Computers \\& Operations Research",
         "keywords": "category:learning, theme:multi-skill, theme:implementation",
@@ -39,6 +42,7 @@
     },
     "debruecker2015": {
         "author": "De Bruecker, Philippe and Van den Bergh, Jorne and {Beli{\\'e}n}, Jeroen and Demeulemeester, Erik",
+        "comment": "Contribution: state-of-the-art review of skill-aware workforce planning. Evidence: structured literature synthesis. Role: scope-defining survey for multi-skill decisions.",
         "doi": "10.1016/j.ejor.2014.10.038",
         "journal": "European Journal of Operational Research",
         "keywords": "category:survey, theme:multi-skill",
@@ -52,6 +56,7 @@
     },
     "defraeye2016": {
         "author": "Defraeye, Mieke and Van Nieuwenhuyse, Inneke",
+        "comment": "Contribution: review of staffing under nonstationary demand. Evidence: literature classification of uncertainty-aware models. Role: uncertainty dimension in the review.",
         "doi": "10.1016/j.omega.2015.04.002",
         "journal": "Omega",
         "keywords": "category:survey, theme:demand uncertainty",
@@ -64,6 +69,7 @@
     },
     "digaspero2007": {
         "author": "Di Gaspero, Luca and {G{\\\"a}rtner}, Johannes and Kortsarz, Guy and Musliu, Nysret and Schaerf, Andrea and Slany, Wolfgang",
+        "comment": "Contribution: minimum shift design formulation with hybrid heuristic. Evidence: computational gains over earlier implementation. Role: canonical shift-design paper.",
         "doi": "10.1007/s10479-007-0221-1",
         "journal": "Annals of Operations Research",
         "keywords": "category:shift design",
@@ -77,6 +83,7 @@
     },
     "ernst2004": {
         "author": "Ernst, A. T. and Jiang, H. and Krishnamoorthy, M. and Sier, D.",
+        "comment": "Contribution: foundational review of staff scheduling and rostering. Evidence: broad taxonomy of applications, constraints, and methods. Role: field-framing survey.",
         "doi": "10.1016/S0377-2217(03)00095-X",
         "journal": "European Journal of Operational Research",
         "keywords": "category:survey",
@@ -90,6 +97,7 @@
     },
     "gordon2004": {
         "author": "Gordon, Lynn and Erkut, Erhan",
+        "comment": "Contribution: spreadsheet decision-support tool for volunteer scheduling. Evidence: Edmonton Folk Festival case. Role: practice-facing implementation example.",
         "doi": "10.1287/inte.1040.0097",
         "journal": "Interfaces",
         "keywords": "category:preference, theme:implementation",
@@ -103,6 +111,7 @@
     },
     "henao2015": {
         "author": "Henao, C{\\'e}sar Augusto and Mu{\\~n}oz, Juan Carlos and Ferrer, Juan Carlos",
+        "comment": "Contribution: multi-skilling analysis in retail personnel scheduling. Evidence: mixed-integer case study over training and assignment decisions. Role: implementation-linked flexibility evidence.",
         "doi": "10.1057/jors.2015.9",
         "journal": "Journal of the Operational Research Society",
         "keywords": "category:preference, theme:multi-skill, theme:implementation",
@@ -116,6 +125,7 @@
     },
     "hojati2011": {
         "author": "Hojati, Mehran and Patil, Ashok S.",
+        "comment": "Contribution: heuristic scheduling for heterogeneous part-time employees. Evidence: ILP-based computational tests. Role: heterogeneity bridge between service staffing and flexible scheduling.",
         "doi": "10.1016/j.ejor.2010.09.004",
         "journal": "European Journal of Operational Research",
         "keywords": "category:shift design",
@@ -129,6 +139,7 @@
     },
     "parisio2015": {
         "author": "Parisio, Alessandra and Jones, Colin N.",
+        "comment": "Contribution: two-stage stochastic retail scheduling model. Evidence: scenario-based treatment of uncertain demand. Role: demand-uncertainty paper in shift design.",
         "doi": "10.1016/j.omega.2015.01.003",
         "journal": "Omega",
         "keywords": "category:shift design, theme:demand uncertainty",
@@ -141,6 +152,7 @@
     },
     "petrovic2017": {
         "author": "Petrovic, Sanja",
+        "comment": "Contribution: critical analysis of the research-practice gap. Evidence: qualitative software and deployment perspective. Role: adoption-gap reference.",
         "doi": "10.1007/s10479-017-2574-4",
         "journal": "Annals of Operations Research",
         "keywords": "category:preference, theme:implementation",
@@ -154,6 +166,7 @@
     },
     "prot2015": {
         "author": "Prot, D. and {Lap{\\`e}gue}, T. and Bellenguez-Morineau, O.",
+        "comment": "Contribution: two-phase shift design and task scheduling with equity. Evidence: computational evaluation of coordinated decomposition. Role: decomposition-based realism.",
         "doi": "10.1080/00207543.2015.1037023",
         "journal": "International Journal of Production Research",
         "keywords": "category:shift design, theme:multi-skill",
@@ -167,6 +180,7 @@
     },
     "sun2022": {
         "author": "Sun, Yuan and Wang, Sheng and Shen, Yunzhuang and Li, Xiaodong and Ernst, Andreas T. and Kirley, Michael",
+        "comment": "Contribution: ML-guided ant colony optimisation. Evidence: comparative experiments outside personnel scheduling. Role: methodological analogue for learning-guided search.",
         "doi": "10.1016/j.cor.2022.105769",
         "journal": "Computers \\& Operations Research",
         "keywords": "category:learning, theme:evolutionary",
@@ -179,6 +193,7 @@
     },
     "topaloglu2004": {
         "author": "Topaloglu, Seyda and Ozkarahan, Irem",
+        "comment": "Contribution: preference-aware tour scheduling by goal programming. Evidence: model-based schedule generation under flexibility goals. Role: early preference-integration study.",
         "doi": "10.1023/B:ANOR.0000019102.68222.df",
         "journal": "Annals of Operations Research",
         "keywords": "category:preference",
@@ -192,6 +207,7 @@
     },
     "vandenbergh2013": {
         "author": "Van den Bergh, Jorne and {Beli{\\'e}n}, Jeroen and De Bruecker, Philippe and Demeulemeester, Erik and De Boeck, Liesje",
+        "comment": "Contribution: classification-oriented review of personnel scheduling. Evidence: structured literature taxonomy. Role: primary survey seed for search strategy.",
         "doi": "10.1016/j.ejor.2012.11.029",
         "journal": "European Journal of Operational Research",
         "keywords": "category:survey",
@@ -205,6 +221,7 @@
     },
     "xue2025": {
         "author": "Xue, Ning and Bai, Ruibin and Jin, Huan and Cui, Tianxiang",
+        "comment": "Contribution: learning-enhanced memetic algorithm for flexible multi-skilled scheduling. Evidence: real-world experiments with historical shift-pattern learning. Role: anchor paper of the review.",
         "doi": "10.1016/j.swevo.2025.102160",
         "journal": "Swarm and Evolutionary Computation",
         "keywords": "category:learning, theme:multi-skill, theme:evolutionary",

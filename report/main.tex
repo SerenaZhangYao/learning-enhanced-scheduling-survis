@@ -60,7 +60,7 @@ The search started from recent survey papers by Van den Bergh et al.\ (2013), De
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.82\textwidth]{figures/connectedpapers_graph.png}
-\caption{ConnectedPapers graph illustrating citation-based expansion from the seed paper by Xue et al.\ (2025).}
+\caption{ConnectedPapers graph illustrating citation-based expansion from the frontier anchor paper by Xue et al.\ (2025), after survey-led scoping.}
 \label{fig:connectedpapers}
 \end{figure}
 
@@ -80,7 +80,8 @@ The search yielded 42 candidate papers. After removing 21 papers for relevance o
 \toprule
 Stage & Count \\
 \midrule
-Seed paper & 1 \\
+Initial survey papers & 3 \\
+Frontier anchor paper & 1 \\
 ConnectedPapers and database candidates & 42 \\
 Removed after relevance / DOI screening & 21 \\
 Full-text papers screened & 26 \\
@@ -164,20 +165,20 @@ Category C improves realism through decomposition and uncertainty handling, but 
 
 \textbf{\c{C}ak{\i}rgil et al.\ (2020).} This study examines multi-objective, multi-skill workforce scheduling and routing for field service operations. Validation on real-life and literature instances shows that a two-stage matheuristic scales to richer service settings than classical rostering models \cite{cakirgil2020}.
 
-\textbf{Sun et al.\ (2022).} Sun et al.\ propose ML-ACO, in which a learned predictor biases ant colony optimisation toward promising solution components. Comparative experiments show that learned guidance can strengthen metaheuristic search, although the evidence comes from generic rather than personnel-scheduling instances \cite{sun2022}.
+\textbf{Sun et al.\ (2022).} Sun et al.\ propose ML-ACO, in which a learned predictor biases ant colony optimisation toward promising solution components. Comparative experiments show that learned guidance can strengthen metaheuristic search, although the evidence comes from generic rather than personnel-scheduling instances; it is therefore included as methodological, rather than direct domain, evidence \cite{sun2022}.
 
-\textbf{Xue et al.\ (2025).} Xue et al.\ address flexible-shift scheduling for multi-skilled part-time staff with a learning-enhanced memetic algorithm. Real-world experiments show that decision-tree learning over historical shift patterns can improve search guidance in practice-oriented scheduling \cite{xue2025}.
+\textbf{Xue et al.\ (2025).} Xue et al.\ address flexible-shift scheduling for multi-skilled part-time staff with a learning-enhanced memetic algorithm. Real-world experiments show that decision-tree learning over historical shift patterns can improve search guidance in a practice-oriented flexible-shift setting, making this the strongest direct evidence for the review's target problem \cite{xue2025}.
 
 Category D offers the strongest computational evidence, but most methods still rely on handcrafted encodings and benchmark-style evaluation rather than deployment studies.
 
 \section{Discussion}
 
-A key insight from the reviewed literature is that the main bottleneck is no longer pure computational optimisation but model realism. Early work emphasised how to solve difficult schedules, whereas recent studies argue that deployment fails when models omit tacit preferences, flexibility, or contextual constraints \cite{petrovic2017,xue2025}. There is therefore a clear tension between realism and tractability: flexible shifts, heterogeneous skills, and uncertain demand improve fidelity, but they also push researchers toward decomposition, heuristics, or matheuristics \cite{digaspero2007,parisio2015,prot2015}. Evidence strength also varies across categories: survey papers synthesise broad literatures, implementation papers often rely on single organisational cases, and learning-enhanced papers usually report computational comparisons rather than long-horizon field deployment. The SurVis visualisation in Figure~\ref{fig:survis} reinforces this pattern by showing that only a small frontier of papers lies at the overlap of the learning and multi-skilled themes, while implementation-oriented studies remain concentrated outside that frontier. No reviewed study fully integrates flexible shift design, multi-skilled workforce modelling, data-driven preference learning, and real-world deployment validation in one tested framework. Public benchmarks remain limited, and learned components are rarely evaluated for transferability or bias. Figure~\ref{fig:framework} summarises this review's synthesis of the field.
+A key insight from the reviewed literature is that the main bottleneck is no longer pure computational optimisation but model realism. Early work emphasised how to solve difficult schedules, whereas recent studies argue that deployment fails when models omit tacit preferences, flexibility, or contextual constraints \cite{petrovic2017,xue2025}. There is therefore a clear tension between realism and tractability: flexible shifts, heterogeneous skills, and uncertain demand improve fidelity, but they also push researchers toward decomposition, heuristics, or matheuristics \cite{digaspero2007,parisio2015,prot2015}. Evidence strength also varies across categories: survey papers synthesise broad literatures, implementation papers often rely on single organisational cases, and learning-enhanced papers usually report computational comparisons rather than long-horizon field deployment. The reviewed field can therefore be interpreted along two axes: model realism, ranging from fixed and homogeneous formulations to flexible and preference-aware scheduling, and solution intelligence, ranging from exact and decomposition-based optimisation to learning-enhanced search. The SurVis visualisation in Figure~\ref{fig:survis} reinforces this pattern by showing that only a small frontier of papers lies at the overlap of the learning and multi-skilled themes, while implementation-oriented studies remain concentrated outside that frontier. No reviewed study fully integrates flexible shift design, multi-skilled workforce modelling, data-driven preference learning, and real-world deployment validation in one tested framework. Public benchmarks remain limited, and learned components are rarely evaluated for transferability or bias. Figure~\ref{fig:framework} summarises this review's synthesis of the field.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.74\textwidth]{figures/figure_conceptual_framework.png}
-\caption{Conceptual framework synthesised from the review. Most studies cluster in intermediate regions; very few combine high model realism with learning-enhanced optimisation.}
+\caption{Conceptual framework synthesised from the review. Positions are qualitative category-level synthesis scores: the x-axis reflects solution intelligence from exact/decomposition-based optimisation to learning-enhanced search, and the y-axis reflects model realism from fixed homogeneous settings to flexible, skill-aware, preference-aware formulations.}
 \label{fig:framework}
 \end{figure}
 
