@@ -187,6 +187,11 @@ const tags = (function () {
         }
 
         tagDivs = tagDivs.sort(function (a, b) {
+            var labelA = a.children()[1].innerText;
+            var labelB = b.children()[1].innerText;
+            if (name === 'category') {
+                return labelA.localeCompare(labelB);
+            }
             var nA = parseInt(a.attr('value'));
             var nB = parseInt(b.attr('value'));
             if (nA < nB)
@@ -194,8 +199,7 @@ const tags = (function () {
             else if (nA > nB)
                 return -1;
             else {
-                // return 0;
-                return a.children()[1].innerText.localeCompare(b.children()[1].innerText);
+                return labelA.localeCompare(labelB);
             }
         });
         var categoryDiv = $('<div>', {
