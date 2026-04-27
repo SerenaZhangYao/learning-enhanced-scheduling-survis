@@ -1,234 +1,252 @@
-﻿const generatedBibEntries = {
-    "aickelin2004": {
-        "author": "Aickelin, Uwe and Dowsland, Kathryn A.",
-        "comment": "Contribution: indirect genetic algorithm for nurse scheduling. Evidence: live hospital experiments against tabu-search-style baselines. Role: evolutionary baseline.",
-        "doi": "10.1016/S0305-0548(03)00034-0",
-        "journal": "Computers \\& Operations Research",
-        "keywords": "category:D hybrid learning, theme:evolutionary",
-        "number": "5",
-        "pages": "761--778",
-        "title": "An indirect genetic algorithm for a nurse-scheduling problem",
-        "type": "article",
-        "url": "https://doi.org/10.1016/S0305-0548(03)00034-0",
-        "volume": "31",
-        "year": "2004"
-    },
-    "bai2010": {
-        "author": "Bai, Ruibin and Burke, Edmund K. and Kendall, Graham and Li, Jingpeng and McCollum, Barry",
-        "comment": "Contribution: hybrid evolutionary rostering method. Evidence: benchmark comparisons showing better feasible and high-quality solutions. Role: stronger hybrid-search evidence.",
-        "doi": "10.1109/TEVC.2009.2033583",
-        "journal": "IEEE Transactions on Evolutionary Computation",
-        "keywords": "category:D hybrid learning, theme:evolutionary",
-        "number": "4",
-        "pages": "580--590",
-        "title": "A hybrid evolutionary approach to the nurse rostering problem",
-        "type": "article",
-        "url": "https://doi.org/10.1109/TEVC.2009.2033583",
-        "volume": "14",
-        "year": "2010"
-    },
-    "burgert2024": {
-        "author": "Burgert, Florens L. and Windhausen, Matth{\\\"a}us and Kehder, Maximilian and Steireif, Niklas and {M{\\\"u}tze-Niew{\\\"o}hner}, Susanne and Nitsch, Verena",
-        "comment": "Contribution: systematic review of algorithmic workforce scheduling for human-centered work design. Evidence: structured literature review and conceptual optimization model. Role: primary recent survey seed for the review.",
-        "doi": "10.1016/j.procs.2024.01.155",
-        "journal": "Procedia Computer Science",
-        "keywords": "category:A human-centered framing, theme:human-centered, theme:algorithmic-management, theme:work-design, theme:learning-effects, theme:employee-preferences",
-        "pages": "1573--1583",
-        "title": "Workforce scheduling approaches for supporting human-centered algorithmic management in manufacturing: A systematic literature review and a conceptual optimization model",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.procs.2024.01.155",
-        "volume": "232",
-        "year": "2024"
-    },
-    "cakirgil2020": {
-        "author": "{\\c{C}ak{\\i}rgil}, Seray and {Y{\\\"u}cel}, Eda and Kuyzu, G{\\\"u}ltekin",
-        "comment": "Contribution: two-stage matheuristic for multi-skill scheduling and routing. Evidence: real-life and literature instances. Role: rich service-operation frontier.",
-        "doi": "10.1016/j.cor.2020.104908",
-        "journal": "Computers \\& Operations Research",
-        "keywords": "category:D hybrid learning, theme:multi-skill, theme:implementation",
-        "pages": "104908",
-        "title": "An integrated solution approach for multi-objective, multi-skill workforce scheduling and routing problems",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.cor.2020.104908",
-        "volume": "118",
-        "year": "2020"
-    },
-    "debruecker2015": {
-        "author": "De Bruecker, Philippe and Van den Bergh, Jorne and {Beli{\\'e}n}, Jeroen and Demeulemeester, Erik",
-        "comment": "Contribution: state-of-the-art review of skill-aware workforce planning. Evidence: structured literature synthesis. Role: secondary survey seed and multi-skill modelling anchor.",
-        "doi": "10.1016/j.ejor.2014.10.038",
-        "journal": "European Journal of Operational Research",
-        "keywords": "category:B skill demand, theme:multi-skill",
-        "number": "1",
-        "pages": "1--16",
-        "title": "Workforce planning incorporating skills: State of the art",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.ejor.2014.10.038",
-        "volume": "243",
-        "year": "2015"
-    },
-    "defraeye2016": {
-        "author": "Defraeye, Mieke and Van Nieuwenhuyse, Inneke",
-        "comment": "Contribution: review of staffing under nonstationary demand. Evidence: literature classification of uncertainty-aware models. Role: uncertainty dimension in the review.",
-        "doi": "10.1016/j.omega.2015.04.002",
-        "journal": "Omega",
-        "keywords": "category:B skill demand, theme:demand uncertainty",
-        "pages": "4--25",
-        "title": "Staffing and scheduling under nonstationary demand for service: A literature review",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.omega.2015.04.002",
-        "volume": "58",
-        "year": "2016"
-    },
-    "digaspero2007": {
-        "author": "Di Gaspero, Luca and {G{\\\"a}rtner}, Johannes and Kortsarz, Guy and Musliu, Nysret and Schaerf, Andrea and Slany, Wolfgang",
-        "comment": "Contribution: minimum shift design formulation with hybrid heuristic. Evidence: computational gains over earlier implementation. Role: canonical shift-design paper.",
-        "doi": "10.1007/s10479-007-0221-1",
-        "journal": "Annals of Operations Research",
-        "keywords": "category:C preference shift decomposition",
-        "number": "1",
-        "pages": "79--105",
-        "title": "The minimum shift design problem",
-        "type": "article",
-        "url": "https://doi.org/10.1007/s10479-007-0221-1",
-        "volume": "155",
-        "year": "2007"
-    },
-    "ernst2004": {
-        "author": "Ernst, A. T. and Jiang, H. and Krishnamoorthy, M. and Sier, D.",
-        "comment": "Contribution: foundational review of staff scheduling and rostering. Evidence: broad taxonomy of applications, constraints, and methods. Role: field-framing survey.",
-        "doi": "10.1016/S0377-2217(03)00095-X",
-        "journal": "European Journal of Operational Research",
-        "keywords": "category:A human-centered framing",
-        "number": "1",
-        "pages": "3--27",
-        "title": "Staff scheduling and rostering: A review of applications, methods and models",
-        "type": "article",
-        "url": "https://doi.org/10.1016/S0377-2217(03)00095-X",
-        "volume": "153",
-        "year": "2004"
-    },
-    "henao2015": {
-        "author": "Henao, C{\\'e}sar Augusto and Mu{\\~n}oz, Juan Carlos and Ferrer, Juan Carlos",
-        "comment": "Contribution: multi-skilling analysis in retail personnel scheduling. Evidence: mixed-integer case study over training and assignment decisions. Role: skill-aware modelling evidence with implementation context.",
-        "doi": "10.1057/jors.2015.9",
-        "journal": "Journal of the Operational Research Society",
-        "keywords": "category:B skill demand, theme:multi-skill, theme:implementation",
-        "number": "12",
-        "pages": "1949--1959",
-        "title": "The impact of multi-skilling on personnel scheduling in the service sector: A retail industry case",
-        "type": "article",
-        "url": "https://doi.org/10.1057/jors.2015.9",
-        "volume": "66",
-        "year": "2015"
-    },
-    "hojati2011": {
-        "author": "Hojati, Mehran and Patil, Ashok S.",
-        "comment": "Contribution: heuristic scheduling for heterogeneous part-time employees. Evidence: ILP-based computational tests. Role: heterogeneity bridge between service staffing and flexible scheduling.",
-        "doi": "10.1016/j.ejor.2010.09.004",
-        "journal": "European Journal of Operational Research",
-        "keywords": "category:C preference shift decomposition",
-        "number": "1",
-        "pages": "37--50",
-        "title": "An integer linear programming-based heuristic for scheduling heterogeneous, part-time service employees",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.ejor.2010.09.004",
-        "volume": "209",
-        "year": "2011"
-    },
-    "parisio2015": {
-        "author": "Parisio, Alessandra and Jones, Colin N.",
-        "comment": "Contribution: two-stage stochastic retail scheduling model. Evidence: scenario-based treatment of uncertain demand. Role: demand-aware modelling anchor.",
-        "doi": "10.1016/j.omega.2015.01.003",
-        "journal": "Omega",
-        "keywords": "category:B skill demand, theme:demand uncertainty",
-        "pages": "97--103",
-        "title": "A two-stage stochastic programming approach to employee scheduling in retail outlets with uncertain demand",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.omega.2015.01.003",
-        "volume": "53",
-        "year": "2015"
-    },
-    "petrovic2017": {
-        "author": "Petrovic, Sanja",
-        "comment": "Contribution: critical analysis of the research-practice gap. Evidence: qualitative software and deployment perspective. Role: human-centered adoption and practice-gap reference.",
-        "doi": "10.1007/s10479-017-2574-4",
-        "journal": "Annals of Operations Research",
-        "keywords": "category:A human-centered framing, theme:implementation",
-        "number": "1",
-        "pages": "161--179",
-        "title": "``You have to get wet to learn how to swim'' applied to bridging the gap between research into personnel scheduling and its implementation in practice",
-        "type": "article",
-        "url": "https://doi.org/10.1007/s10479-017-2574-4",
-        "volume": "275",
-        "year": "2017"
-    },
-    "prot2015": {
-        "author": "Prot, D. and {Lap{\\`e}gue}, T. and Bellenguez-Morineau, O.",
-        "comment": "Contribution: two-phase shift design and task scheduling with equity. Evidence: computational evaluation of coordinated decomposition. Role: decomposition-based realism.",
-        "doi": "10.1080/00207543.2015.1037023",
-        "journal": "International Journal of Production Research",
-        "keywords": "category:C preference shift decomposition, theme:multi-skill, theme:employee-preferences",
-        "number": "24",
-        "pages": "7286--7298",
-        "title": "A two-phase method for the shift design and personnel task scheduling problem with equity objective",
-        "type": "article",
-        "url": "https://doi.org/10.1080/00207543.2015.1037023",
-        "volume": "53",
-        "year": "2015"
-    },
-    "sun2022": {
-        "author": "Sun, Yuan and Wang, Sheng and Shen, Yunzhuang and Li, Xiaodong and Ernst, Andreas T. and Kirley, Michael",
-        "comment": "Contribution: ML-guided ant colony optimisation. Evidence: comparative experiments outside personnel scheduling. Role: methodological analogue for learning-guided search.",
-        "doi": "10.1016/j.cor.2022.105769",
-        "journal": "Computers \\& Operations Research",
-        "keywords": "category:D hybrid learning, theme:evolutionary",
-        "pages": "105769",
-        "title": "Boosting ant colony optimization via solution prediction and machine learning",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.cor.2022.105769",
-        "volume": "143",
-        "year": "2022"
-    },
-    "topaloglu2004": {
-        "author": "Topaloglu, Seyda and Ozkarahan, Irem",
-        "comment": "Contribution: preference-aware tour scheduling by goal programming. Evidence: model-based schedule generation under flexibility goals. Role: early preference-integration study.",
-        "doi": "10.1023/B:ANOR.0000019102.68222.df",
-        "journal": "Annals of Operations Research",
-        "keywords": "category:C preference shift decomposition, theme:employee-preferences",
-        "number": "1--4",
-        "pages": "135--158",
-        "title": "An implicit goal programming model for the tour scheduling problem considering the employee work preferences",
-        "type": "article",
-        "url": "https://doi.org/10.1023/B:ANOR.0000019102.68222.df",
-        "volume": "128",
-        "year": "2004"
-    },
-    "vandenbergh2013": {
-        "author": "Van den Bergh, Jorne and {Beli{\\'e}n}, Jeroen and De Bruecker, Philippe and Demeulemeester, Erik and De Boeck, Liesje",
-        "comment": "Contribution: classification-oriented review of personnel scheduling. Evidence: structured literature taxonomy. Role: field-framing survey for personnel scheduling taxonomy.",
-        "doi": "10.1016/j.ejor.2012.11.029",
-        "journal": "European Journal of Operational Research",
-        "keywords": "category:A human-centered framing",
-        "number": "3",
-        "pages": "367--385",
-        "title": "Personnel scheduling: A literature review",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.ejor.2012.11.029",
-        "volume": "226",
-        "year": "2013"
-    },
-    "xue2025": {
-        "author": "Xue, Ning and Bai, Ruibin and Jin, Huan and Cui, Tianxiang",
-        "comment": "Contribution: learning-enhanced memetic algorithm for flexible multi-skilled scheduling. Evidence: real-world experiments with historical shift-pattern learning. Role: frontier anchor for learning-enhanced flexible multi-skilled personnel scheduling.",
-        "doi": "10.1016/j.swevo.2025.102160",
-        "journal": "Swarm and Evolutionary Computation",
-        "keywords": "category:D hybrid learning, theme:multi-skill, theme:evolutionary",
-        "pages": "102160",
-        "title": "An evolutionary method with shift pattern learning for real-world multi-skilled personnel scheduling with flexible shifts",
-        "type": "article",
-        "url": "https://doi.org/10.1016/j.swevo.2025.102160",
-        "volume": "99",
-        "year": "2025"
-    }
-};
+define({ "entries" : [
+{
+  "id": "Adamo2024",
+  "title": "A review of recent advances in time-dependent vehicle routing",
+  "abstract": "This survey covers algorithmic developments in time-dependent routing since 2015, including travel time prediction methods, real-time re-optimization, and machine learning-inspired approaches.",
+  "authors": [
+    {"name": "Adamo, Tommaso"},
+    {"name": "Gendreau, Michel"},
+    {"name": "Ghiani, Gianpaolo"},
+    {"name": "Guerriero, Emanuela"}
+  ],
+  "doi": "10.1016/j.ejor.2024.06.016",
+  "year": "2024",
+  "venue": "European Journal of Operational Research",
+  "keywords": ["vehicle routing", "time-dependent", "machine learning", "survey"],
+  "cluster_id": "1",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S0377221724004648"
+},
+{
+  "id": "Bai2023",
+  "title": "Analytics and machine learning in vehicle routing research",
+  "abstract": "A comprehensive survey classifying ML integration into VRP research across three types: ML-assisted modelling, offline and online optimisation.",
+  "authors": [
+    {"name": "Bai, Ruibin"},
+    {"name": "Chen, Xinan"},
+    {"name": "Chen, Zhi-Long"},
+    {"name": "Cui, Tianxiang"},
+    {"name": "Kendall, Graham"}
+  ],
+  "doi": "10.1080/00207543.2021.2013566",
+  "year": "2023",
+  "venue": "International Journal of Production Research",
+  "keywords": ["vehicle routing", "machine learning", "survey", "optimization"],
+  "cluster_id": "3",
+  "full_text": "https://www.tandfonline.com/doi/abs/10.1080/00207543.2021.2013566"
+},
+{
+  "id": "Chen2022",
+  "title": "Cooperative double-layer genetic programming hyper-heuristic for online container terminal truck dispatching",
+  "abstract": "A cooperative double-layer GP hyper-heuristic is proposed for dynamic truck dispatching in container terminals, demonstrating superior performance on real-world port data.",
+  "authors": [
+    {"name": "Chen, Xinan"},
+    {"name": "Bai, Ruibin"},
+    {"name": "Qu, Rong"},
+    {"name": "Dong, Haibo"}
+  ],
+  "doi": "10.1109/TEVC.2022.3209985",
+  "year": "2022",
+  "venue": "IEEE Transactions on Evolutionary Computation",
+  "keywords": ["genetic programming", "hyper-heuristic", "container terminal", "truck dispatching"],
+  "cluster_id": "1",
+  "full_text": "https://ieeexplore.ieee.org/document/9904980"
+},
+{
+  "id": "Chen2024",
+  "title": "Advancing container port traffic simulation: A data-driven machine learning approach in sparse data environments",
+  "abstract": "Introduces GP, RL, and hybrid GPRL-H methods to improve container port truck dispatching simulation accuracy, reducing error from 35% to 7% in sparse GPS data environments.",
+  "authors": [
+    {"name": "Chen, Xinan"},
+    {"name": "Qu, Rong"},
+    {"name": "Dong, Jing"},
+    {"name": "Dong, Haibo"},
+    {"name": "Bai, Ruibin"}
+  ],
+  "doi": "10.1016/j.asoc.2024.112190",
+  "year": "2024",
+  "venue": "Applied Soft Computing",
+  "keywords": ["port simulation", "genetic programming", "reinforcement learning", "sparse data", "truck dispatching"],
+  "cluster_id": "1",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S1568494624009876"
+},
+{
+  "id": "Douaioui2024",
+  "title": "Machine learning and deep learning models for demand forecasting in supply chain management: A critical review",
+  "abstract": "Analyzes 119 papers from Scopus (2015-2024) on ML/DL for supply chain demand forecasting, providing macro and micro-level insights into model effectiveness.",
+  "authors": [
+    {"name": "Douaioui, Kaoutar"},
+    {"name": "Oucheikh, Rachid"},
+    {"name": "Benmoussa, Othmane"},
+    {"name": "Mabrouki, Charif"}
+  ],
+  "doi": "10.3390/asi7050093",
+  "year": "2024",
+  "venue": "Applied System Innovation",
+  "keywords": ["supply chain", "demand forecasting", "machine learning", "deep learning", "review"],
+  "cluster_id": "5",
+  "full_text": "https://www.mdpi.com/2571-5577/7/5/93"
+},
+{
+  "id": "Jin2024",
+  "title": "Container port truck dispatching optimization using Real2Sim based deep reinforcement learning",
+  "abstract": "Proposes a Real2Sim DRL framework with spatial-attention networks for dynamic truck dispatching in container ports, achieving state-of-the-art results under uncertainties.",
+  "authors": [
+    {"name": "Jin, Jiahuan"},
+    {"name": "Cui, Tianxiang"},
+    {"name": "Bai, Ruibin"},
+    {"name": "Qu, Rong"}
+  ],
+  "doi": "10.1016/j.ejor.2023.11.038",
+  "year": "2024",
+  "venue": "European Journal of Operational Research",
+  "keywords": ["deep reinforcement learning", "truck dispatching", "container port", "Real2Sim"],
+  "cluster_id": "2",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S0377221723008792"
+},
+{
+  "id": "Kallestad2023",
+  "title": "A general deep reinforcement learning hyperheuristic framework for solving combinatorial optimization problems",
+  "abstract": "Introduces DRLH, integrating DRL into ALNS as a hyperheuristic selector, outperforming ALNS on routing and scheduling problems with large heuristic pools.",
+  "authors": [
+    {"name": "Kallestad, Jakob"},
+    {"name": "Hasibi, Ramin"},
+    {"name": "Hemmati, Ahmad"},
+    {"name": "Sorensen, Kenneth"}
+  ],
+  "doi": "10.1016/j.ejor.2023.01.017",
+  "year": "2023",
+  "venue": "European Journal of Operational Research",
+  "keywords": ["deep reinforcement learning", "hyper-heuristic", "combinatorial optimization", "ALNS"],
+  "cluster_id": "2",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S037722172300036X"
+},
+{
+  "id": "Khedr2024",
+  "title": "Enhancing supply chain management with deep learning and machine learning techniques: A review",
+  "abstract": "Reviews cloud-based ML/DL applications in SCM, identifying transformative potential across demand forecasting, inventory management, and logistics optimization.",
+  "authors": [
+    {"name": "Khedr, Ahmed M."},
+    {"name": "Rani, Sheeja S."}
+  ],
+  "doi": "10.1016/j.joitmc.2024.100379",
+  "year": "2024",
+  "venue": "Journal of Open Innovation: Technology, Market, and Complexity",
+  "keywords": ["supply chain management", "deep learning", "machine learning", "review"],
+  "cluster_id": "5",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S2199853124001732"
+},
+{
+  "id": "Kogler2024",
+  "title": "Discrete-event simulation in logistics and supply chain management: a scientometric perspective",
+  "abstract": "A systematic literature review of 127 papers on DES in logistics and SCM using scientometric analysis, identifying key research fields and application domains.",
+  "authors": [
+    {"name": "Kogler, Christoph"},
+    {"name": "Maxera, Pavel"}
+  ],
+  "doi": "10.1080/21693277.2024.2415038",
+  "year": "2024",
+  "venue": "International Journal of Logistics Research and Applications",
+  "keywords": ["discrete event simulation", "logistics", "supply chain", "scientometric", "review"],
+  "cluster_id": "4",
+  "full_text": "https://www.tandfonline.com/doi/full/10.1080/21693277.2024.2415038"
+},
+{
+  "id": "MuLiu2024",
+  "title": "Analyzing vehicle path optimization using an improved genetic algorithm in the presence of stochastic perturbation matter",
+  "abstract": "Proposes a stochastic perturbation GA for vehicle routing in cold chain logistics, tested on a 24-customer case with improved convergence and cost reduction.",
+  "authors": [
+    {"name": "Mu, Shengdong"},
+    {"name": "Liu, Boyu"}
+  ],
+  "doi": "10.1038/s41598-024-77667-1",
+  "year": "2024",
+  "venue": "Scientific Reports",
+  "keywords": ["genetic algorithm", "vehicle routing", "cold chain logistics", "stochastic optimization"],
+  "cluster_id": "3",
+  "full_text": "https://www.nature.com/articles/s41598-024-77667-1"
+},
+{
+  "id": "Sobhanan2024",
+  "title": "Genetic algorithms with neural cost predictor for solving hierarchical vehicle routing problems",
+  "abstract": "Combines genetic algorithms with neural network cost predictors to efficiently solve hierarchical VRPs, validated on real e-commerce logistics data.",
+  "authors": [
+    {"name": "Sobhanan, Abhay"},
+    {"name": "Park, Junyoung"},
+    {"name": "Park, Jinkyoo"},
+    {"name": "Kwon, Changhyun"}
+  ],
+  "doi": "10.1287/trsc.2023.0369",
+  "year": "2024",
+  "venue": "Transportation Science",
+  "keywords": ["genetic algorithm", "neural network", "vehicle routing", "hierarchical optimization"],
+  "cluster_id": "3",
+  "full_text": "https://pubsonline.informs.org/doi/10.1287/trsc.2023.0369"
+},
+{
+  "id": "Sustainability2025",
+  "title": "Machine learning and simulation for efficiency and sustainability in container terminals",
+  "abstract": "Proposes a framework combining ML with discrete-event simulation to predict ship turnaround times at Algiers Port, achieving 0.9991 predictive precision and reducing carbon emissions.",
+  "authors": [
+    {"name": "Filom, Sina"},
+    {"name": "Amiri, Amir M."},
+    {"name": "Razavi, Sara"}
+  ],
+  "doi": "10.3390/su17072927",
+  "year": "2025",
+  "venue": "Sustainability",
+  "keywords": ["container terminal", "machine learning", "discrete event simulation", "sustainability", "port logistics"],
+  "cluster_id": "4",
+  "full_text": "https://www.mdpi.com/2071-1050/17/7/2927"
+},
+{
+  "id": "Tu2023",
+  "title": "A deep reinforcement learning hyper-heuristic with feature fusion for online packing problems",
+  "abstract": "Extends DRL hyper-heuristic with visual and distributional feature fusion for online packing, reducing optimality gap by 2-19% over state-of-the-art methods.",
+  "authors": [
+    {"name": "Tu, Chaofan"},
+    {"name": "Bai, Ruibin"},
+    {"name": "Aickelin, Uwe"},
+    {"name": "Zhang, Yuchang"},
+    {"name": "Du, Heshan"}
+  ],
+  "doi": "10.1016/j.eswa.2023.120568",
+  "year": "2023",
+  "venue": "Expert Systems with Applications",
+  "keywords": ["deep reinforcement learning", "hyper-heuristic", "online packing", "feature fusion"],
+  "cluster_id": "2",
+  "full_text": "https://www.sciencedirect.com/science/article/pii/S0957417423010709"
+},
+{
+  "id": "WangInnc2024",
+  "title": "Low-carbon logistics distribution vehicle routing optimization based on INNC-GA",
+  "abstract": "Proposes an improved nearest neighbor construction genetic algorithm to minimize total routing cost including carbon emissions, validated on the Solomon dataset.",
+  "authors": [
+    {"name": "Wang, Jinling"},
+    {"name": "Zhang, Liang"}
+  ],
+  "doi": "10.3390/app14073061",
+  "year": "2024",
+  "venue": "Applied Sciences",
+  "keywords": ["genetic algorithm", "vehicle routing", "carbon emissions", "logistics", "low-carbon"],
+  "cluster_id": "3",
+  "full_text": "https://www.mdpi.com/2076-3417/14/7/3061"
+},
+{
+  "id": "Zhang2022",
+  "title": "A deep reinforcement learning based hyper-heuristic for combinatorial optimisation with uncertainties",
+  "abstract": "Proposes DRL-HH using DDQN for online combinatorial optimization under uncertainty, outperforming existing methods on scheduling and routing problems with stochastic parameters.",
+  "authors": [
+    {"name": "Zhang, Yuchang"},
+    {"name": "Bai, Ruibin"},
+    {"name": "Qu, Rong"},
+    {"name": "Tu, Chaofan"},
+    {"name": "Jin, Jiahuan"}
+  ],
+  "doi": "10.1016/j.ejor.2021.10.032",
+  "year": "2022",
+  "venue": "European Journal of Operational Research",
+  "keywords": ["deep reinforcement learning", "hyper-heuristic", "combinatorial optimization", "uncertainty"],
+  "cluster_id": "2",
+  "full_text": "https://www.sciencedirect.com/science/article/abs/pii/S0377221721008821"
+}
+]});
