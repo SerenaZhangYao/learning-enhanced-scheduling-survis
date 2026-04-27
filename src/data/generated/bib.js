@@ -1,4 +1,4 @@
-define({ "entries" : [
+var generatedBibEntries = [
 {
   "id": "Adamo2024",
   "title": "A review of recent advances in time-dependent vehicle routing",
@@ -209,44 +209,4 @@ define({ "entries" : [
     {"name": "Zhang, Yuchang"},
     {"name": "Du, Heshan"}
   ],
-  "doi": "10.1016/j.eswa.2023.120568",
-  "year": "2023",
-  "venue": "Expert Systems with Applications",
-  "keywords": ["deep reinforcement learning", "hyper-heuristic", "online packing", "feature fusion"],
-  "cluster_id": "2",
-  "full_text": "https://www.sciencedirect.com/science/article/pii/S0957417423010709"
-},
-{
-  "id": "WangInnc2024",
-  "title": "Low-carbon logistics distribution vehicle routing optimization based on INNC-GA",
-  "abstract": "Proposes an improved nearest neighbor construction genetic algorithm to minimize total routing cost including carbon emissions, validated on the Solomon dataset.",
-  "authors": [
-    {"name": "Wang, Jinling"},
-    {"name": "Zhang, Liang"}
-  ],
-  "doi": "10.3390/app14073061",
-  "year": "2024",
-  "venue": "Applied Sciences",
-  "keywords": ["genetic algorithm", "vehicle routing", "carbon emissions", "logistics", "low-carbon"],
-  "cluster_id": "3",
-  "full_text": "https://www.mdpi.com/2076-3417/14/7/3061"
-},
-{
-  "id": "Zhang2022",
-  "title": "A deep reinforcement learning based hyper-heuristic for combinatorial optimisation with uncertainties",
-  "abstract": "Proposes DRL-HH using DDQN for online combinatorial optimization under uncertainty, outperforming existing methods on scheduling and routing problems with stochastic parameters.",
-  "authors": [
-    {"name": "Zhang, Yuchang"},
-    {"name": "Bai, Ruibin"},
-    {"name": "Qu, Rong"},
-    {"name": "Tu, Chaofan"},
-    {"name": "Jin, Jiahuan"}
-  ],
-  "doi": "10.1016/j.ejor.2021.10.032",
-  "year": "2022",
-  "venue": "European Journal of Operational Research",
-  "keywords": ["deep reinforcement learning", "hyper-heuristic", "combinatorial optimization", "uncertainty"],
-  "cluster_id": "2",
-  "full_text": "https://www.sciencedirect.com/science/article/abs/pii/S0377221721008821"
-}
-]});
+  "doi": "10.1016/j.eswa
