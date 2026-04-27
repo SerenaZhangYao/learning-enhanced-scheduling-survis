@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'Learning-Enhanced Personnel Scheduling for Flexible Multi-Skilled Workforces';
+var title = 'Toward Human-Centered and Learning-Enhanced Personnel Scheduling for Flexible Multi-Skilled Workforces';
 
 /**
  * Relative path to the data directory
@@ -54,7 +54,7 @@ var editable = false;
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'SurVis companion page for the COMP4126 Coursework 3 literature review, organised by review categories and cross-cutting research themes; the select button highlights the frontier anchor paper, Xue et al. (2025).',
+    html: 'SurVis companion page for the COMP4126 Coursework 3 literature review, organised from the Burgert et al. (2024) human-centered survey seed toward the Xue et al. (2025) learning-enhanced frontier.',
     id: 'xue2025'
 };
 
